@@ -66,7 +66,7 @@ public class playeurMouvement : MonoBehaviour
 
         charCon.Move(userInput* Time.deltaTime);
    
-        if (Input.GetAxis("Jump") >= 0.1)
+        if (Input.GetAxis("Jump") >= 0.1f)
         {
             directionY = jumpSpeed;
             jumpMovement = new Vector3(0.0f,0.3f, 0.0f);
