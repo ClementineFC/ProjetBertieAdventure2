@@ -23534,7 +23534,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &897788438
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23551,7 +23551,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &898413545
 GameObject:
   m_ObjectHideFlags: 0
@@ -55882,7 +55882,7 @@ MeshFilter:
   m_Mesh: {fileID: 2534964839176971238, guid: aba3cc24f1fa72640837e61c8e4fb43a, type: 3}
 --- !u!95 &513529487654827613
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -55899,7 +55899,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &534928706549985858
 Transform:
   m_ObjectHideFlags: 0
@@ -56595,7 +56595,7 @@ CharacterController:
   m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!95 &727550616929518231
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -56612,7 +56612,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &734913839089340084
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -59021,7 +59021,7 @@ CharacterController:
   m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!95 &2010785559061693285
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -59038,7 +59038,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2025614655329575616
 GameObject:
   m_ObjectHideFlags: 0
@@ -70852,7 +70852,7 @@ CharacterController:
   m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!95 &7922510110767165917
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -70869,7 +70869,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &7928788455551030204
 Transform:
   m_ObjectHideFlags: 0
