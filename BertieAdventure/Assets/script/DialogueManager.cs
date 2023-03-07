@@ -7,17 +7,21 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nomPersonnage;
     public Text dialogueText;
-    public Animator animator;
+    private GameObject leCanvas;
+   
     private Queue<string> reponse;
     // Start is called before the first frame update
     void Start()
     {
         reponse = new Queue<string>();
-       
+        leCanvas = GameObject.Find("Canvas");
+
+
     }
     public void StartDialogue(DialogueScript dialogue)
     {
-        animator.SetBool("isOpen", true);
+        Debug.Log("Debut du dialogue avec  " + dialogue.nom);
+        
         nomPersonnage.text = dialogue.nom;
 
         reponse.Clear();
@@ -35,11 +39,13 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         string sentence = reponse.Dequeue();
+
         dialogueText.text = sentence;
     }
     public void EndDialogue()
     {
-        animator.SetBool("isOpen", false);
+        Debug.Log("Fin dialogue");
+        leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = 0;
     }
 
 }

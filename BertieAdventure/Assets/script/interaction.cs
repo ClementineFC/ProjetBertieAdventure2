@@ -5,15 +5,42 @@ using UnityEngine;
 public class interaction : MonoBehaviour
 {
     public DialogueScript dialogue;
-    //public Animator animator;
+    public GameObject zoneInfo;
+    public GameObject backGroundDialogue;
+    public bool activeInfo;
+    public bool flagDialogue;
+
+    void Start()
+    {
+        zoneInfo = GameObject.Find("ZoneInfo");
+        backGroundDialogue = GameObject.Find("BackGroundDialigue");
+        zoneInfo.SetActive(false);
+        backGroundDialogue.SetActive(false);
+        flagDialogue = false;
+
+    }
     private void OnTriggerStay(Collider other)
     {
-        //if (Input.GetKeyDown(KeyCode.A))
-        //{
-            TriggerDialogue();
-           // animator.SetBool("isOpen", true);
-        //}
-            
+        activeInfo = true;
+        if (activeInfo == true)
+        {
+            zoneInfo.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+
+            flagDialogue = !flagDialogue;
+
+            if (flagDialogue == true)
+            {
+                backGroundDialogue.SetActive(true);
+                TriggerDialogue();
+            }
+        }
+        if (flagDialogue == false)
+        {
+            zoneInfo.SetActive(true);
+        }
     }
     public void TriggerDialogue()
     {
@@ -21,6 +48,9 @@ public class interaction : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        //animator.SetBool("isOpen", false);
+        zoneInfo.SetActive(false);
+        backGroundDialogue.SetActive(false);
+        flagDialogue = false;
     }
+
 }
