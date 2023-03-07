@@ -4359,11 +4359,7 @@ Transform:
   m_Children:
   - {fileID: 523752424}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 21
-=======
   m_RootOrder: 23
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &179456306
 GameObject:
@@ -11620,11 +11616,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 13
-=======
   m_RootOrder: 15
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &461958017
 GameObject:
@@ -12081,11 +12073,7 @@ Transform:
   - {fileID: 666904466}
   - {fileID: 1370037053}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 17
-=======
   m_RootOrder: 19
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484929076
 GameObject:
@@ -17678,11 +17666,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 18
-=======
   m_RootOrder: 20
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696804960
 GameObject:
@@ -17715,11 +17699,7 @@ Transform:
   - {fileID: 566756559372610261}
   - {fileID: 1121280329}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 16
-=======
   m_RootOrder: 18
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &697044071
 GameObject:
@@ -22818,11 +22798,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 12
-=======
   m_RootOrder: 14
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &866819727
 GameObject:
@@ -30151,11 +30127,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 15
-=======
   m_RootOrder: 17
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167094325
 GameObject:
@@ -30827,11 +30799,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 20
-=======
   m_RootOrder: 22
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1212142507
 GameObject:
@@ -35947,11 +35915,7 @@ Transform:
   - {fileID: 543450653207253839}
   - {fileID: 560391182}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 22
-=======
   m_RootOrder: 24
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1411418158
 GameObject:
@@ -38069,11 +38033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8097748729736863229, guid: af63396b3ddaedb4c8998c85f10eea69, type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
-      value: 3
-=======
       value: 5
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8097748729736863229, guid: af63396b3ddaedb4c8998c85f10eea69, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44960,11 +44920,7 @@ RectTransform:
   - {fileID: 1386171216}
   - {fileID: 975929738}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 14
-=======
   m_RootOrder: 16
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -45239,11 +45195,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 10
-=======
   m_RootOrder: 12
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764537970
 GameObject:
@@ -46189,11 +46141,7 @@ Transform:
   - {fileID: 822243635}
   - {fileID: 824199494}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 6
-=======
   m_RootOrder: 8
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1766305243
 GameObject:
@@ -46456,11 +46404,7 @@ Transform:
   - {fileID: 1520954773}
   - {fileID: 619684752}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 7
-=======
   m_RootOrder: 9
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1779138879
 GameObject:
@@ -52575,11 +52519,7 @@ Transform:
   m_Children:
   - {fileID: 338152851}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 8
-=======
   m_RootOrder: 10
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2009095608
 PrefabInstance:
@@ -54960,11 +54900,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 19
-=======
   m_RootOrder: 21
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104035465
 GameObject:
@@ -59366,7 +59302,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream
 --- !u!1 &980906451024742467
 GameObject:
   m_ObjectHideFlags: 0
@@ -59418,8 +59353,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> Stashed changes
 --- !u!1 &983386572098064346
 GameObject:
   m_ObjectHideFlags: 0
@@ -59906,7 +59839,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!1 &1092767619755536802
 GameObject:
   m_ObjectHideFlags: 0
@@ -60145,13 +60077,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
---- !u!4 &1121108315532252985 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7876586336211479592, guid: e83816cc55326b14fbe33f14f5d65c4a, type: 3}
-  m_PrefabInstance: {fileID: 7116175150996650769}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!108 &1179274656409225167
 Light:
   m_ObjectHideFlags: 0
@@ -62438,11 +62363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 2
-=======
   m_RootOrder: 4
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1798521780940781757
 MeshFilter:
@@ -66977,55 +66898,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6170867170854663321}
   m_Mesh: {fileID: -6609867042106794827, guid: aba3cc24f1fa72640837e61c8e4fb43a, type: 3}
-<<<<<<< Updated upstream
---- !u!4 &3165773411690061986
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703942003139198717}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25546646, y: -0.000097866214, z: 0.0018342491}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3150599343479359723}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3172250507530646603
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8081692581290834595}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2756650581024002733}
-  m_Father: {fileID: 7425429303016520214}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3184804312102797057
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990281853755841962}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7332919345857389801}
-  m_Father: {fileID: 5199803450222444091}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
 --- !u!1001 &3174783822950248807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67095,7 +66967,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c839b98cbeb7f41babfedeb27dcab6, type: 3}
->>>>>>> Stashed changes
 --- !u!23 &3191175296955193389
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75317,11 +75188,7 @@ Transform:
   - {fileID: 641299668018509282}
   - {fileID: 6491649837465329456}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 4
-=======
   m_RootOrder: 6
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5409207255246512679
 GameObject:
@@ -83910,7 +83777,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!4 &7610707241173206640
 Transform:
   m_ObjectHideFlags: 0
@@ -83958,13 +83824,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
---- !u!4 &7627028791898381670 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5032701485727394817, guid: b3c839b98cbeb7f41babfedeb27dcab6, type: 3}
-  m_PrefabInstance: {fileID: 3174783822950248807}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &7631889946171856007
 GameObject:
   m_ObjectHideFlags: 0
@@ -84806,11 +84665,7 @@ Transform:
   - {fileID: 31244662552571437}
   - {fileID: 1628404291}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 11
-=======
   m_RootOrder: 13
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: -183.442, z: 0}
 --- !u!114 &7922510110767165915
 MonoBehaviour:
@@ -88305,11 +88160,7 @@ Transform:
   - {fileID: 4643720825400638233}
   - {fileID: 1687395726175912724}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 5
-=======
   m_RootOrder: 7
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8780551767811834395
 Transform:
@@ -90355,9 +90206,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream
-  m_RootOrder: 9
-=======
   m_RootOrder: 11
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 106.54599, y: -234.86, z: -517.64}
