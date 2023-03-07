@@ -69,7 +69,7 @@ public class playeurMouvement : MonoBehaviour
         if (Input.GetAxis("Jump") >= 0.1f)
         {
             directionY = jumpSpeed;
-            jumpMovement = new Vector3(0.0f,0.3f, 0.0f);
+            jumpMovement = new Vector3(0.0f,0.2f, 0.0f);
             charCon.Move(jumpMovement);  
         }
         charIsGrounded = charCon.isGrounded;
