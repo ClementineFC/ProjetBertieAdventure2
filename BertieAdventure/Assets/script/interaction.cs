@@ -21,19 +21,17 @@ public class interaction : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        activeInfo = true;
-        if (activeInfo == true)
-        {
-            zoneInfo.SetActive(true);
-        }
+
         if (Input.GetKeyDown(KeyCode.A))
         {
 
             flagDialogue = !flagDialogue;
+            
 
             if (flagDialogue == true)
             {
                 backGroundDialogue.SetActive(true);
+                zoneInfo.SetActive(false);
                 TriggerDialogue();
             }
         }

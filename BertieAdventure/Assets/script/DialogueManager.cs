@@ -8,14 +8,17 @@ public class DialogueManager : MonoBehaviour
     public Text nomPersonnage;
     public Text dialogueText;
     private GameObject leCanvas;
-   
+    public GameObject zoneInfo;
+    public GameObject backGroundDialogue;
+
     private Queue<string> reponse;
     // Start is called before the first frame update
     void Start()
     {
         reponse = new Queue<string>();
         leCanvas = GameObject.Find("Canvas");
-
+        zoneInfo = GameObject.Find("ZoneInfo");
+        backGroundDialogue = GameObject.Find("BackGroundDialigue");
 
     }
     public void StartDialogue(DialogueScript dialogue)
@@ -45,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         Debug.Log("Fin dialogue");
+        backGroundDialogue.SetActive(false);
         leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = 0;
     }
 

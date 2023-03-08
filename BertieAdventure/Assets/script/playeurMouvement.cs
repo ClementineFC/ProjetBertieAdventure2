@@ -41,6 +41,9 @@ public class playeurMouvement : MonoBehaviour
         jump = Input.GetAxis("Jump");
         //animatorPerso.SetBool("walk",true);
         animatorPerso.SetBool("jump",false);
+        animatorPerso.SetFloat("AxisH", horizontal);
+        animatorPerso.SetFloat("AxisV", vertical);
+        animatorPerso.SetFloat("Turn", turn);
         turn = Input.GetAxis("Mouse X");
 
         if (Mathf.Abs(horizontal) >= 0.01f || Mathf.Abs(vertical) >= 0.01f)
