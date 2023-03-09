@@ -39,5 +39,11 @@ public class QueteManager : MonoBehaviour
             textQuete.text = TabDescriptionQuete[IndiceQueteEnCours];
 
         }
+        if (IndiceQueteEnCours == 2)
+        {
+            zoneQuete.SetActive(true);
+            textQuete.text = TabDescriptionQuete[IndiceQueteEnCours];
+
+        }
     }
 }

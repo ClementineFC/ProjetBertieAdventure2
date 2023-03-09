@@ -73,8 +73,8 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _BottomBrightness: 3.2
-    - _BottomStrenght: 5
+    - _BottomBrightness: 3.69
+    - _BottomStrenght: 8.06
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -93,11 +93,11 @@ Material:
     - _VoronoiSpeed: 3.8
     - _ZWrite: 1
     - _rippelsAmout: 3.8
-    - _vertexOffesetAmout: -0.4
+    - _vertexOffesetAmout: -1.55
     - _voronoiScale: 5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _rippelsColor: {r: 0.28235295, g: 4.065292, b: 6.2827234, a: 0.7882353}
+    - _rippelsColor: {r: 1.6139817, g: 5.0337615, b: 7.2800884, a: 0.78039217}
     - _rippelsSpeeds: {r: 0, g: 0.4, b: 0, a: 0}
   m_BuildTextureStacks: []
