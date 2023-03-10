@@ -24,7 +24,7 @@ public class playeurMouvement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gravity = 9.81f;
+        gravity = 49.81f;
         vitesseRotateCamera = 200.0f;
         jumpSpeed = 8.0f;
         playeurSpeed = 3.0f;
@@ -73,6 +73,7 @@ public class playeurMouvement : MonoBehaviour
         {
             directionY = jumpSpeed;
             jumpMovement = new Vector3(0.0f,0.2f, 0.0f);
+            //gravity = 100000000.0f;
             charCon.Move(jumpMovement);  
         }
         charIsGrounded = charCon.isGrounded;
