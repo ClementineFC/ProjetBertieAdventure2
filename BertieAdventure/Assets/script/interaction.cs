@@ -30,7 +30,7 @@ public class interaction : MonoBehaviour
         flagDialogue = false;
         boutonSuivant.GetComponent<Button>().onClick.AddListener(repliqueSuivante);
         IndexSentences = 0;
-
+        numeroQueteADonnerJour = 0;
     }
     private void OnTriggerStay(Collider other)
     {
@@ -45,7 +45,6 @@ public class interaction : MonoBehaviour
             {
                 backGroundDialogue.SetActive(true);
                 zoneInfo.SetActive(false);
-                //StartDialogue(dialogue);
                 dialogueText.text = sentences[IndexSentences];
 
             }
@@ -80,9 +79,21 @@ public class interaction : MonoBehaviour
         else //Fin dialogue
         {
             backGroundDialogue.SetActive(false);
-            leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = numeroQueteADonnerJour;
+            
+            if(numeroQueteADonnerJour == 0)
+            {
+                //leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[numeroQueteADonnerJour];
+                //leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = 1;
+            }
+            if(numeroQueteADonnerJour == 1)
+            {
+                /*leCanvas.GetComponent<QueteManager>().TabAvancementQuete[] = leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour];
+                leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[] = leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[numeroQueteADonnerJour];
+                leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[] = leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQueteADonnerJour];*/
+            }
         }
        
+        
 
     }
     
