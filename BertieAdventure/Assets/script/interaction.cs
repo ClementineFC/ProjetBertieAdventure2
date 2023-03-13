@@ -15,6 +15,7 @@ public class interaction : MonoBehaviour
     public bool activeInfo;
     public bool flagDialogue;
     public int numeroQueteADonnerJour;
+    public int compteur;
 
     public Text nomPersonnage;
     public Text dialogueText;
@@ -30,13 +31,16 @@ public class interaction : MonoBehaviour
         flagDialogue = false;
         boutonSuivant.GetComponent<Button>().onClick.AddListener(repliqueSuivante);
         IndexSentences = 0;
-        numeroQueteADonnerJour = 0;
+        compteur = 0;
+
     }
     private void OnTriggerStay(Collider other)
     {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
+            
+            GameManager.jeParleAvec = numeroQueteADonnerJour;
 
             flagDialogue = !flagDialogue;
             
@@ -48,12 +52,29 @@ public class interaction : MonoBehaviour
                 dialogueText.text = sentences[IndexSentences];
 
             }
+
+            if (flagDialogue == false)
+            {
+                zoneInfo.SetActive(true);
+
+            }
+
         }
+
         if (flagDialogue == false)
         {
             zoneInfo.SetActive(true);
 
         }
+        if (compteur > 1 && leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQueteADonnerJour] == leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQueteADonnerJour])
+        {
+            leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 3;
+            dialogueText.text = leCanvas.GetComponent<QueteManager>().TabReponseFinQuete[numeroQueteADonnerJour];
+            
+
+        }
+        compteur++;
+        Debug.Log("Compteur : " + compteur);
     }
   
     private void OnTriggerExit(Collider other)
@@ -66,37 +87,43 @@ public class interaction : MonoBehaviour
     }
 
 
-
-    public void repliqueSuivante()
+    void repliqueSuivante()
     {
+        if (GameManager.jeParleAvec == numeroQueteADonnerJour)
+        {
+           // Debug.Log("Replique suivante : " + GameManager.nbclic + "Je donne la quete n°" + numeroQueteADonnerJour + "Je parle avec le perso qui a la quete n°" + GameManager.jeParleAvec);
+           // GameManager.nbclic++;
 
-        if(IndexSentences < sentences.Length)
-        {
-            
-            dialogueText.text = sentences[IndexSentences];
-            IndexSentences++;
-        }
-        else //Fin dialogue
-        {
-            backGroundDialogue.SetActive(false);
-            
-            if(numeroQueteADonnerJour == 0)
+
+            if (IndexSentences >= sentences.Length- 1) // cas fin du dialogue
             {
-                //leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[numeroQueteADonnerJour];
-                //leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = 1;
+                Debug.Log("fin du dialogue");
+                leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours = numeroQueteADonnerJour; // la quete en cours est donné par le PNJ
+                leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 0; // on donne la quete au joueur (avancement 0 = debut quete sinon moins -1 )
+                leCanvas.GetComponent<QueteManager>().zoneQuete.SetActive(true);
+                backGroundDialogue.SetActive(false); // on deactive la zone de dialogue
+               
             }
-            if(numeroQueteADonnerJour == 1)
+            else // cas normal de dialogue
             {
-                /*leCanvas.GetComponent<QueteManager>().TabAvancementQuete[] = leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour];
-                leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[] = leCanvas.GetComponent<QueteManager>().TabDescriptionQuete[numeroQueteADonnerJour];
-                leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[] = leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQueteADonnerJour];*/
+
+                IndexSentences++;
+                dialogueText.text = sentences[IndexSentences];
+
+                Debug.Log("Index dialogue =" + IndexSentences);
             }
+            if (compteur > 1 && leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQueteADonnerJour] == leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQueteADonnerJour])
+            {
+
+                backGroundDialogue.SetActive(false);
+                leCanvas.GetComponent<QueteManager>().zoneQuete.SetActive(false); //Revoir ca ferme pas la fernetre de quete ! 
+            }
+
+
         }
-       
-        
 
     }
-    
+
 
 
 

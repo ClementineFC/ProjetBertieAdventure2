@@ -9,6 +9,7 @@ public class ScriptGestionObjectQuete : MonoBehaviour
     public GameObject piece;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class ScriptGestionObjectQuete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -26,10 +27,28 @@ public class ScriptGestionObjectQuete : MonoBehaviour
         if (numeroQuete == leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours)
         {
             
-            leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQuete] = 1; // 1 je peux recupere l'objet de la quete en cours
-            Destroy(piece);
-            leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete]++;
-            leCanvas.GetComponent<QueteManager>().nbObjectRamasse.text = leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete].ToString();
+           
+           
+
+            if (leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete] < leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQuete])
+            {
+                leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQuete] = 1; // Je suis dans l'avancement 1 : chercher les objets
+                Destroy(piece);
+                leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete]++;
+                //leCanvas.GetComponent<QueteManager>().nbObjectRamasse.text = leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete].ToString();
+                // CAR c'est dans l'update ... du QueteManager
+            }
+
+            if (leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete] == leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQuete])
+            {
+                leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQuete] = 2; // Je suis dans l'avancement 2 : j'ai trouvé tous les objets et je dois retourner voir le PNJ
+                
+            }
+
+            if (leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete] >= leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQuete])
+            {
+                Debug.Log("Nous avons pris tous les objets de la quete.");
+            }
 
 
         }
@@ -37,9 +56,6 @@ public class ScriptGestionObjectQuete : MonoBehaviour
         {
             Debug.Log("Cette object ne fait pas partie de la quete en cours");
         }
-
-
-
 
         if(leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete] == leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQuete])
         {

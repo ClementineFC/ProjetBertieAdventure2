@@ -13156,6 +13156,7 @@ Transform:
   - {fileID: 1985030583}
   - {fileID: 1370037053}
   - {fileID: 700855093}
+  - {fileID: 1330585104}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19075,7 +19076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff8a05d6e79bc4408446a8278903931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: 
+  nom: Paul
   sentences:
   - Bonjour je m'appelle Paul
   - J'AI PERDU MES OEUFS !
@@ -19086,6 +19087,7 @@ MonoBehaviour:
   activeInfo: 0
   flagDialogue: 0
   numeroQueteADonnerJour: 1
+  compteur: 0
   nomPersonnage: {fileID: 504085632}
   dialogueText: {fileID: 716498261}
   leCanvas: {fileID: 1755007524}
@@ -27658,7 +27660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: _
 --- !u!222 &970406106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36073,6 +36075,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330543087}
   m_Mesh: {fileID: -5084487645391317124, guid: aba3cc24f1fa72640837e61c8e4fb43a, type: 3}
+--- !u!1 &1330585103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330585104}
+  - component: {fileID: 1330585106}
+  - component: {fileID: 1330585105}
+  m_Layer: 0
+  m_Name: ZoneRencontreProta2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1330585104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330585103}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 226.613, y: 36.104748, z: -274.196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1369224283}
+  m_Father: {fileID: 484262594}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1330585105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330585103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff8a05d6e79bc4408446a8278903931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nom: Pierre
+  sentences:
+  - Bonjour je m'appelle Pierre
+  - J'AI PERDU MES OEUFS !
+  - "Aide moi a les retrouv\xE9 s'il te plais ? "
+  zoneInfo: {fileID: 975929737}
+  backGroundDialogue: {fileID: 897788434}
+  boutonSuivant: {fileID: 2036372015}
+  activeInfo: 0
+  flagDialogue: 0
+  numeroQueteADonnerJour: 2
+  compteur: 0
+  nomPersonnage: {fileID: 504085632}
+  dialogueText: {fileID: 716498261}
+  leCanvas: {fileID: 1755007524}
+  IndexSentences: 0
+--- !u!65 &1330585106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330585103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4355316, y: 2.1791258, z: 2.8457139}
+  m_Center: {x: 0.08743286, y: 0.5895629, z: 0.5111748}
 --- !u!1 &1330667583
 GameObject:
   m_ObjectHideFlags: 0
@@ -37034,6 +37111,104 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7876586336211479592, guid: e83816cc55326b14fbe33f14f5d65c4a, type: 3}
   m_PrefabInstance: {fileID: 179470576}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1369224282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369224283}
+  - component: {fileID: 1369224286}
+  - component: {fileID: 1369224285}
+  - component: {fileID: 1369224284}
+  m_Layer: 0
+  m_Name: prota2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1369224283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369224282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1330585104}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1369224284
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369224282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1369224285
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369224282}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb64f228a4f869840be651b3d36b5e8b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1369224286
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369224282}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1370037050
 GameObject:
   m_ObjectHideFlags: 0
@@ -37093,7 +37268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff8a05d6e79bc4408446a8278903931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nom: 
+  nom: Vieux
   sentences:
   - 'Bonjour vayant jeune homme ! Moi ancien chevalier de la garde royal, je t''attendais
     ! '
@@ -37111,6 +37286,7 @@ MonoBehaviour:
   activeInfo: 0
   flagDialogue: 0
   numeroQueteADonnerJour: 0
+  compteur: 0
   nomPersonnage: {fileID: 504085632}
   dialogueText: {fileID: 716498261}
   leCanvas: {fileID: 1755007524}
@@ -43765,7 +43941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628404288}
   m_LocalRotation: {x: 0.19464512, y: -0.09308402, z: 0.020765439, w: 0.97622615}
-  m_LocalPosition: {x: 0.645, y: 1.5290003, z: -1.12}
+  m_LocalPosition: {x: 0.541, y: 1.699, z: -1.793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47520,7 +47696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1755007525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47618,6 +47794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoneQuete: {fileID: 0}
+  leCanvas: {fileID: 1755007524}
   textQuete: {fileID: 0}
   nbObjectRamasse: {fileID: 0}
   nbObjectARamasser: {fileID: 0}
@@ -47625,12 +47802,18 @@ MonoBehaviour:
   TabDescriptionQuete:
   - "- Retrouv\xE9 les pieces de l'homme myst\xE9rieux"
   - '- Aller chercher des oeufs dans le nis de l''aigle'
+  - '- Aller chercher des oeufs dans le nid de la poule'
   TabRetourVersProtagoniste:
   - "Retourne voir l'homme myst\xE9rieux !"
-  - 
-  TabMaxObjRamasser: 0500000002000000
-  TabAvancementQuete: 0000000000000000
-  TabNbObjectRammase: 0000000000000000
+  - Retourne voir Paul
+  - Retourne voir Pierre
+  TabReponseFinQuete:
+  - Owh merci de m'avoir ramener mon or ! Voila en echange une pomme
+  - 'Merci ! '
+  - 'Super ! '
+  TabMaxObjRamasser: 050000000200000004000000
+  TabAvancementQuete: ffffffffffffffffffffffff
+  TabNbObjectRammase: 000000000000000000000000
 --- !u!1 &1755461973
 GameObject:
   m_ObjectHideFlags: 0
@@ -56317,8 +56500,9 @@ GameObject:
   - component: {fileID: 2036372017}
   - component: {fileID: 2036372016}
   - component: {fileID: 2036372015}
+  - component: {fileID: 2036372018}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: ButtonSuivant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56427,6 +56611,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036372013}
   m_CullTransparentMesh: 1
+--- !u!114 &2036372018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036372013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea664002fad2ee44a9a4147ee9c2f722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2038830834
 GameObject:
   m_ObjectHideFlags: 0
@@ -60766,7 +60962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132147527082529}
   m_LocalRotation: {x: -0, y: -0.07681763, z: -0, w: 0.9970452}
-  m_LocalPosition: {x: 94.9, y: 13.228, z: -148.24}
+  m_LocalPosition: {x: 104.87, y: 10.995, z: -253.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
