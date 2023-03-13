@@ -27,7 +27,7 @@ public class playeurMouvement : MonoBehaviour
         gravity = 49.81f;
         vitesseRotateCamera = 200.0f;
         jumpSpeed = 8.0f;
-        playeurSpeed = 3.0f;
+        playeurSpeed = 6.0f;
         charCon = GetComponent<CharacterController>();
         animatorPerso = GetComponent<Animator>();
     }
