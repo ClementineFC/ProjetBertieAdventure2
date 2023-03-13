@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EcranTitre.unity
     guid: 93566d98eb76c4144b79e70a35d129a9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Animatique.unity
     guid: 2aeb1973ed53859458e8ea7623d068ae
   - enabled: 1

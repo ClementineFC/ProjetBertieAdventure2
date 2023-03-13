@@ -16,6 +16,6 @@ public class UIScript : MonoBehaviour
     void TaskOnClick()
     {
         Debug.Log("clcik");
-        SceneManager.LoadScene("TestProg");
+        SceneManager.LoadScene("Animatique");
     }
 }
