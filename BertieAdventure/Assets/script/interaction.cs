@@ -41,7 +41,6 @@ public class interaction : MonoBehaviour
         {
             
             GameManager.jeParleAvec = numeroQueteADonnerJour;
-
             flagDialogue = !flagDialogue;
             
 
