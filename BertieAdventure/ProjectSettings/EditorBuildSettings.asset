@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Animatique_fin.unity
     guid: feb590362211e554b866926e6e93fa89
+  - enabled: 1
+    path: Assets/Scenes/GrotteNeige.unity
+    guid: 72f65c4f43f49164bb92c9ffeed10294
   m_configObjects: {}
