@@ -18,6 +18,7 @@ public class QueteManager : MonoBehaviour
     public int[] TabAvancementQuete; // 0 quete non fait 1 quete vas chercher object 2 quete rend l'object 3 quete fini
     // Start is called before the first frame update
     public int[] TabNbObjectRammase;
+    
 
     void Start()
     {
