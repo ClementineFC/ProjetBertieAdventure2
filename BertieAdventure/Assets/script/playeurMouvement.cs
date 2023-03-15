@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playeurMouvement : MonoBehaviour
 {
-    public GameObject MessageDebutJeu;
+    public Text MessageDebutJeu;
     public Vector3 jumpMovement;
     public Vector3 userInput;
 
@@ -32,20 +33,23 @@ public class playeurMouvement : MonoBehaviour
         playeurSpeed = 6.0f;
         charCon = GetComponent<CharacterController>();
         animatorPerso = GetComponent<Animator>();
-        MessageDebutJeu = GameObject.Find("MessageDebutJeu");
+        //MessageDebutJeu.SetActive(true);
+        MessageDebutJeu.text = "Bienvenue au village ! \r\nD'après les rumeurs un hermite vivrait dans la forêt, peut-être saurait-il me conseiller !";
 
-        timer = timer + Time.deltaTime;
-        if (timer > 10.0f)
-        {
-            MessageDebutJeu.SetActive(false);
-        }
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        MessageDebutJeu.SetActive(true);
+
+        timer = timer + Time.deltaTime;
+        if (timer >= 10.0f)
+        {
+            Debug.Log("je suis la ");
+            //MessageDebutJeu.SetActive(false);
+            MessageDebutJeu.text = "";
+        } 
+
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
         jump = Input.GetAxis("Jump");
