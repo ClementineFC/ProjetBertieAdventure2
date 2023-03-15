@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playeurMouvement : MonoBehaviour
 {
-
+    public GameObject MessageDebutJeu;
     public Vector3 jumpMovement;
     public Vector3 userInput;
 
@@ -15,6 +15,7 @@ public class playeurMouvement : MonoBehaviour
     public float directionY;
     public float playeurSpeed;
     public float jumpSpeed;
+    public float timer;
 
     private CharacterController charCon;
     public Animator animatorPerso;
@@ -25,17 +26,26 @@ public class playeurMouvement : MonoBehaviour
     void Start()
     {
         gravity = 49.81f;
+        timer = 0.0f;
         vitesseRotateCamera = 200.0f;
         jumpSpeed = 8.0f;
         playeurSpeed = 6.0f;
         charCon = GetComponent<CharacterController>();
         animatorPerso = GetComponent<Animator>();
+        MessageDebutJeu = GameObject.Find("MessageDebutJeu");
+
+        timer = timer + Time.deltaTime;
+        if (timer > 10.0f)
+        {
+            MessageDebutJeu.SetActive(false);
+        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        MessageDebutJeu.SetActive(true);
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
         jump = Input.GetAxis("Jump");
