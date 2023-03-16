@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class playeurMouvement : MonoBehaviour
 {
-    public Text MessageDebutJeu;
+
     public Vector3 jumpMovement;
     public Vector3 userInput;
 
@@ -33,22 +33,11 @@ public class playeurMouvement : MonoBehaviour
         playeurSpeed = 6.0f;
         charCon = GetComponent<CharacterController>();
         animatorPerso = GetComponent<Animator>();
-        //MessageDebutJeu.SetActive(true);
-        MessageDebutJeu.text = "Bienvenue au village ! \r\nD'après les rumeurs un hermite vivrait dans la forêt, peut-être saurait-il me conseiller !";
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        timer = timer + Time.deltaTime;
-        if (timer >= 10.0f)
-        {
-            Debug.Log("je suis la ");
-            //MessageDebutJeu.SetActive(false);
-            MessageDebutJeu.text = "";
-        } 
 
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
@@ -99,8 +88,5 @@ public class playeurMouvement : MonoBehaviour
        
         
     }
-    void handleMovement()
-    {
 
-    }
 }

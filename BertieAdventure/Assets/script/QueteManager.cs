@@ -14,6 +14,7 @@ public class QueteManager : MonoBehaviour
     public string[] TabDescriptionQuete;
     public string[] TabRetourVersProtagoniste;
     public string[] TabReponseFinQuete;
+    public string[] TabQueteTerminer;
     public int[] TabMaxObjRamasser;
     public int[] TabAvancementQuete; // 0 quete non fait 1 quete vas chercher object 2 quete rend l'object 3 quete fini
     // Start is called before the first frame update

@@ -1,31 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KillOnPlane : MonoBehaviour
 {
-    public LayerMask planeLayer; // couche de plane
 
-    void OnCollisionEnter(Collision collision)
+    public Button boutonRestart;
+    public GameObject GameOverBackGround;
+    void start()
     {
-        // Vérifie si la collision a lieu avec un plane
-        if (IsOnPlane(collision.gameObject))
+        GameOverBackGround.SetActive(false);
+    }
+    void Update()
+    {
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Bertie")
         {
-            // Tue le personnage
-            Debug.Log("Le personnage est tombé dans l'eau. Il est mort.");
-            KillPlayer();
+            GameOverBackGround.SetActive(true);
+            boutonRestart.GetComponent<Button>().onClick.AddListener(TaskOnClick);
+            Debug.Log("Bertie ne sait pas nager");
         }
     }
-
-    bool IsOnPlane(GameObject other)
+    void TaskOnClick()
     {
-        // Vérifie si l'objet est sur la couche de plane
-        return ((1 << other.layer) & planeLayer) != 0;
-    }
-
-    void KillPlayer()
-    {
-        // Fait quelque chose pour tuer le personnage (par exemple, désactive le GameObject)
-        gameObject.SetActive(false);
+        Debug.Log("clcik");
+        SceneManager.LoadScene("TestProg");
     }
 }

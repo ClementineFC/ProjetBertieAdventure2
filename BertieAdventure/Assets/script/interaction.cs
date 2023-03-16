@@ -50,15 +50,17 @@ public class interaction : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            
+            Debug.Log("Je dialogue");
             GameManager.jeParleAvec = numeroQueteADonnerJour;
             flagDialogue = !flagDialogue;
             
 
             if (flagDialogue == true)
             {
+                Debug.Log("Ouverture dialogue");
                 backGroundDialogue.SetActive(true);
                 zoneInfo.SetActive(false);
+                nomPersonnage.text = nom;
                 dialogueText.text = sentences[IndexSentences];
 
             }
@@ -81,6 +83,26 @@ public class interaction : MonoBehaviour
 
             leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 3;
             dialogueText.text = leCanvas.GetComponent<QueteManager>().TabReponseFinQuete[numeroQueteADonnerJour];
+            GameManager.nbValeurChevalier = NbvaleurChevalier + 1;
+            zoneValeurChevalier.GetComponent<Text>().text = GameManager.nbValeurChevalier.ToString();
+
+            //Faire poper la valeur
+            StartCoroutine(AfficheItem());
+            
+            
+        }
+        if(leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] == 3)
+        {
+            timer = timer + Time.deltaTime;
+            if(timer >= 5.0f)
+            {
+                leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 4;
+            }
+            
+        }
+        if(leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] == 4)
+        {
+            dialogueText.text = leCanvas.GetComponent<QueteManager>().TabQueteTerminer[numeroQueteADonnerJour];
         }
         compteur++;
     }
@@ -92,15 +114,6 @@ public class interaction : MonoBehaviour
         flagDialogue = false;
         dialogueText.text = "";
         IndexSentences = 0;
-        if (leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] == 4)
-        {
-            NbvaleurChevalier = NbvaleurChevalier + 1;
-            Debug.Log("NbvaleurChevalier " + NbvaleurChevalier);
-            zoneValeurChevalier.GetComponent<Text>().text = NbvaleurChevalier.ToString();
-            //Faire poper la valeur
-            valeurChevalier.SetActive(false);
-
-        }
 
     }
 
@@ -109,8 +122,6 @@ public class interaction : MonoBehaviour
     {
         if (GameManager.jeParleAvec == numeroQueteADonnerJour)
         {
-           // Debug.Log("Replique suivante : " + GameManager.nbclic + "Je donne la quete n°" + numeroQueteADonnerJour + "Je parle avec le perso qui a la quete n°" + GameManager.jeParleAvec);
-           // GameManager.nbclic++;
 
 
             if (IndexSentences >= sentences.Length- 1) // cas fin du dialogue
@@ -120,7 +131,8 @@ public class interaction : MonoBehaviour
                 leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 0; // on donne la quete au joueur (avancement 0 = debut quete sinon moins -1 )
                 leCanvas.GetComponent<QueteManager>().zoneQuete.SetActive(true);
                 backGroundDialogue.SetActive(false); // on deactive la zone de dialogue
-               
+                
+
             }
             else // cas normal de dialogue
             {
@@ -132,27 +144,21 @@ public class interaction : MonoBehaviour
             {
 
                 backGroundDialogue.SetActive(false);
-                leCanvas.GetComponent<QueteManager>().zoneQuete.SetActive(false); //Revoir ca ferme pas la fernetre de quete ! 
+                leCanvas.GetComponent<QueteManager>().zoneQuete.SetActive(false);
+                valeurChevalier.SetActive(false);//Revoir ca ferme pas la fernetre de quete ! 
             }
-            if (leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] == 3)
-            {
-                timer = timer + Time.deltaTime;
-                valeurChevalier.SetActive(true);
-                if (timer >= 5.0f)
-                {
-                    leCanvas.GetComponent<QueteManager>().TabAvancementQuete[numeroQueteADonnerJour] = 4;
-                }
-
-            }
-           
 
 
         }
        
 
     }
-     
 
+    IEnumerator AfficheItem()
+    {
+            valeurChevalier.SetActive(true); //afficher un charactère de la chaine de char
+            yield return new WaitForSeconds(2.0f); //faire une pause toute les 0.1s
+    }
 
 
 }
