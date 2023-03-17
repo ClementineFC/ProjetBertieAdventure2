@@ -26,9 +26,6 @@ public class ScriptGestionObjectQuete : MonoBehaviour
         Debug.Log("Object touché ! ");
         if (numeroQuete == leCanvas.GetComponent<QueteManager>().IndiceQueteEnCours)
         {
-            
-           
-           
 
             if (leCanvas.GetComponent<QueteManager>().TabNbObjectRammase[numeroQuete] < leCanvas.GetComponent<QueteManager>().TabMaxObjRamasser[numeroQuete])
             {

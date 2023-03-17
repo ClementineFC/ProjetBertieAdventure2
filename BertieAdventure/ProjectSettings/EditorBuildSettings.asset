@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GrotteNeige.unity
     guid: 72f65c4f43f49164bb92c9ffeed10294
+  - enabled: 1
+    path: Assets/Scenes/MineVolcan.unity
+    guid: 8f96ae5a1486052488074b1dac9b81a3
   m_configObjects: {}
